@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Book Review API Documentation</h1>
+        <p>Base URL: http://localhost:5000</p>
+        <p>Base URL: https://bookreviewing.azurewebsites.net</p>
+
+        <h2>Create a Book Review</h2>
+        <p><strong>URL:</strong> /book</p>
+        <p><strong>Method:</strong> POST</p>
+        <p><strong>Response:</strong></p>
+        <ul>
+            Shows you the book review you just made.
+        </ul>
+
+        <h2>Get Book Review by ID</h2>
+        <p><strong>URL:</strong> /books/{id}</p>
+        <p><strong>Method:</strong> GET</p>
+        <p><strong>Example:</strong></p>
+    <pre>
+        {
+         "id": 5,
+         "title": "Houseki no Kuni",
+         "author": "Haruko Ichikawa",
+    	 "review": "A captivating manga with beautiful artwork and an intriguing story about gemstone-based beings and their struggle for survival."
+        }
+    </pre>
+
+    <h2>Get All Book Reviews</h2>
+    <p><strong>URL:</strong> /books</p>
+    <p><strong>Method:</strong> GET</p>
+    <p><strong>Response:</strong></p>
+    <ul>
+        Shows you all the book reviews created and stored in the database.
+    </ul>
+
+    <h2>Update A Book Review</h2>
+    <p><strong>URL:</strong> /books/{id}</p>
+    <p><strong>Method:</strong> PUT</p>
+    <p><strong>Response:</strong></p>
+    <pre>
+        {
+            "id": [Updated id],
+            "title": [Updated title],
+            "author": [Updated author],
+            "review": [Updated review]
+        }
+    </pre>
+
+    <h2>Delete A Bokk Review</h2>
+    <p><strong>URL:</strong> /books/{id}</p>
+    <p><strong>Method:</strong> DEL</p>
+    <p><strong>Response:</strong></p>
+    <ul>
+        No reponse to the user.
+    </ul>
+    </body>
+</html>
